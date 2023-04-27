@@ -723,51 +723,82 @@ background-color: #31D0AA;
 
 
   .footer-contact-form{
-    position:relative;
-    display:block;
+    display:flex;
+    flex-direction: column;
   }
 
-  .footer-form-text {
+.footer-form-text {
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--backgroundcolor);
+}
+
+
+.footer-form-container{
+  margin-top: 16px;
+  display: flex;
+}
+
+.footer-form-field{
+  position: relative;
+  display: block;
+}
+
+  .footer-form-field::placeholder{
+ position: absolute;
+font-weight: 400;
+font-size: 12px;
+line-height: 2.0;
+letter-spacing: 0.04em;
+color: var(--backgroundcolor);
+
   }
 
 
   .footer-form-input{
-left: 57.5%;
-right: 24.17%;
-top: 44.87%;
-bottom: 42.31%;
 border: 1px solid var(--backgroundcolor);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 background-color: var(--textcolor);
+color: var(--backgroundcolor);
+width: 264px;
+height: 40px;
+padding: 8px 16px;
   }
 
   .footer-form-subscribe{
+    position:relative;
+text-align: left;
+padding-left: 24px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    align-items: flex-start;
     letter-spacing: 0.04em;
     color: var(--backgroundcolor);
     background-color: var(--logowebcolor);
     cursor: pointer;
     border-radius: 4px;
-    padding: 8px 24px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 165px;
+    margin-left: 24px;
+    width: 165px;
     height: 40px;
     border: none;
+    transition: background-color 250ms var(--cubic); 
+}
+
+.footer-form-subscribe:hover,
+.footer-form-subscribe:focus {
+    background-color: var(--activebackbtncolor);
   }
+  
 
   .footer-form-icon{
+    position: absolute;
 fill: var(--backgroundcolor);
+flex-wrap: wrap;
+margin-left: 16px;
+margin-right: 10px;
   }
 
   .overlay{
@@ -910,7 +941,7 @@ font-weight: 400;
 font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
-color: var(--textcolor);
+color: rgba(46, 47, 66, 0.4);
 }
 
 
@@ -970,4 +1001,10 @@ line-height: 1.33;
 letter-spacing: 0.04em;
 text-decoration-line: underline;
 color: var(--logowebcolor);
+transition: color 250ms var(--cubic); 
   }
+
+.modal-form-privacy:hover,
+.modal-form-privacy:focus {
+color: var(--activebackbtncolor);
+}
