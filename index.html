@@ -406,17 +406,18 @@
     </ul>
 </div>
 
-<form class="footer-contact-form">
+
+<div class="footer-contact-form">
     <p class="footer-form-text">Subscribe</p>
-    <div class="footer-form-container">
+    <form class="footer-form-container">
     <label class="footer-form-field"><input type="email" name="user_email" class="footer-form-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$]" placeholder="E-mail"></label>
     <button type="submit" class="footer-form-subscribe">Subscribe
         <svg class="footer-form-icon" width="24" height="20">
             <use href="./images/icon.svg#icon-icon-send"></use>
         </svg>
     </button>
-</div>
 </form>
+</div>
 
 </div>
     </footer>
@@ -429,9 +430,9 @@
             </svg>
         </button>
 
-    <form class="modal-form">
         <p class="modal-text">Leave your contacts and we will call you back</p>
-        <div class="modal-form-container">
+
+    <form class="modal-form">
         <label class="modal-form-field">
             <span class="modal-form-text">Name</span>
             <span class="modal-form-wrapper">
@@ -476,14 +477,11 @@
             </svg>
         </span>
         </label>
-        <label class="modal-form-field"><span class="modal-form-text">Comment</span><textarea name="user_message" class="modal-form-msg" placeholder="Text input"></textarea></label>
-    </div>
-    <div class="modal-form-container">
+        <label class="modal-form-field"><span class="modal-form-text">Comment</span><textarea name="user_message" class="modal-form-msg" placeholder="Text input"></textarea></label></label>
+        <label class="modal-checkbox-field">
         <input id="user-policy" type="checkbox" name="user_policy" class="modal-form-check" required>
-        <label for="user-policy" class="modal-form-check-desc">
-      I accept the terms and conditions of the <span class="modal-form-privacy"><a href="">Privacy Policy</a></span>
+       <span class="modal-form-check-desc">I accept the terms and conditions of the <a href="" class="modal-form-privacy">Privacy Policy</a></span>
         </label>
-    </div>
         <button type="submit" class="modal-form-submit">Send</button>
     </form>
     </div>
