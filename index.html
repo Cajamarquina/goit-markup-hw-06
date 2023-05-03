@@ -478,10 +478,13 @@
         </span>
         </label>
         <label class="modal-form-field"><span class="modal-form-text">Comment</span><textarea name="user_message" class="modal-form-msg" placeholder="Text input"></textarea></label></label>
-        <label class="modal-checkbox-field">
-        <input id="user-policy" type="checkbox" name="user_policy" class="modal-form-check" required>
+       <label class="modal-checkbox-label">
+        <input id="user-policy" type="checkbox" name="user_policy" value="accept" class="modal-form-check visually hidden" required>
+            <svg class="modal-checkbox-svg" width="10" height="8">
+                <use href="./images/icon.svg#icon-checkbox"></use>
+            </svg>
        <span class="modal-form-check-desc">I accept the terms and conditions of the <a href="" class="modal-form-privacy">Privacy Policy</a></span>
-        </label>
+    </label>
         <button type="submit" class="modal-form-submit">Send</button>
     </form>
     </div>
