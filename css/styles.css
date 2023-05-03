@@ -929,7 +929,7 @@ padding: 8px 16px;
 display: block;
 resize: none;
 margin-top: 4px;
-margin-bottom: 16px;
+margin-bottom: 8px;
 }
 
 .modal-form-msg::placeholder{
@@ -965,7 +965,7 @@ color: rgba(46, 47, 66, 0.4);
   position: absolute;
   display: block;
   justify-content:left ;
-  top: 476px;;
+  top: 468px;;
   left: 38px;
   fill: var(--secondarycolor);
   background-repeat: no-repeat;
