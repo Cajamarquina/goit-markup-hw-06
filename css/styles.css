@@ -974,7 +974,6 @@ left: 3px;
   fill: var(--secondarycolor);
   background-position: center;
   background-size: 0;
-  justify-content: left;
   cursor:pointer;
   }
 
