@@ -860,7 +860,6 @@ display: flex;
 flex-direction: column;
 gap:8px;
 margin-top: 16px;
-margin-bottom: 16px;
 }
 
   .modal-text {
@@ -928,8 +927,6 @@ border-radius: 4px;
 padding: 8px 16px;
 display: block;
 resize: none;
-margin-top: 4px;
-margin-bottom: 8px;
 }
 
 .modal-form-msg::placeholder{
@@ -946,6 +943,12 @@ color: rgba(46, 47, 66, 0.4);
   gap: 8px;
   justify-content: center;
   transition: var(--cubic);
+  margin-top: 8px;
+}
+
+.modal-checkbox-wrapper{
+position:relative;
+display: block;
 }
 
 .modal-form-check {
@@ -964,11 +967,11 @@ color: rgba(46, 47, 66, 0.4);
 .modal-checkbox-svg{
   position: absolute;
   display: block;
-  justify-content:left ;
-  top: 468px;;
-  left: 38px;
+  justify-content:center;
+  align-items: center;
+  top: 22%;
+left: 3px;
   fill: var(--secondarycolor);
-  background-repeat: no-repeat;
   background-position: center;
   background-size: 0;
   justify-content: left;
@@ -1007,7 +1010,8 @@ padding: 16px 32px;
 display: block;
 margin-left: auto;
 margin-right: auto;
-margin-top: 20px;
+margin-top: 16px;
+margin-bottom: 24px;
 min-width: 169px;
 height: 56px;
 border: none;
